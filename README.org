@@ -51,25 +51,13 @@
   Installation of padrick is straight forward:
 
   #+BEGIN_SRC bash
-    pip install git+ssh://git@iis-git.ee.ethz.ch/utilities/padrick.git
-  #+END_SRC
-
-  Or if you prefer an https connection over SSH:
-  #+BEGIN_SRC bash
-    pip install git+https://iis-git.ee.ethz.ch/utilities/padrick
-  #+END_SRC
-
-  If you plan to modify or frequently update padrick you might want to install
-  it with the pip editable flag so changes to the source code of padrick take
-  effect immediately to all Python environments were you installed padrick.
-
-  #+BEGIN_SRC bash
-    git clone https://iis-git.ee.ethz.ch/utilities/padrick
+    git clone git@github.com:AlSaqr-platform/padrick.git
     pip install -e ./padrick
   #+END_SRC
 
-  Both installation schemes will automatically install all the required
+  This framework will automatically install all the required
   dependencies. This will install the new command line tool ~padrick~.
+  It is recommmended to use a virtual environment.
 
 ** Write the Padframe Configuration File  
   Now that you installed padrick, you can start writing your padframe

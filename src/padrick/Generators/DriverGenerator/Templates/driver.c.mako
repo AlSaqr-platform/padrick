@@ -9,8 +9,8 @@
 #include "bitfield.h"
 % endfor
 
-#define REG_WRITE32(addr, value) *((volatile uint32_t*) addr) = (uint32_t) value
-#define REG_READ32(addr) *((volatile uint32_t*) addr)
+#define REG_WRITE32(addr, value) *((volatile uint32_t*) (long)addr) = (uint32_t) value
+#define REG_READ32(addr) *((volatile uint32_t*) (long) addr)
 
 % for pad_domain in padframe.pad_domains:
 % for pad in pad_domain.pad_list:
